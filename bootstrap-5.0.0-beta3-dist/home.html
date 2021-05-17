@@ -14,13 +14,30 @@
         }
 
         #nav {
-            margin-top: 3%;
+            
         }
         
         #logo {
-            margin-left: 1%;
-            max-height: 2.5%;
-            max-width: 2.5%;
+            margin-left: 10px;
+            height: 50px;
+          
+        }
+
+        #text {
+            color: black;
+            font-size: 25px; 
+        }
+
+        .insta {
+            height: 50px; 
+        }
+        
+        .facebook {
+            height: 50px;
+        }
+
+        .nav-link {
+            padding-left: 9%;
         }
 
         #paypal {
@@ -74,23 +91,17 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <img id="logo" src="logo_haus_only.png" />
-        <a class="navbar-brand" href="#top">Rock@Home</a>
+        <a class="navbar-brand" href="#top">
+            <img id="logo" src="logo_haus_only.png" />
+        </a>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#seite_musik">Acts</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#seite_Tour-Daten">Interviews</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link " href="#seite_Videos">FAQ</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link " href="#seite_Merch">Support</a>
-                </li>
-            </ul>
+            <a class="nav-link" id="text" href="#seite_musik">Acts</a>
+            <a class="nav-link" id="text" href="#seite_Tour-Daten">Interviews</a>
+            <a class="nav-link" id="text" href="#seite_Videos">FAQ</a>
+            <a class="nav-link" href="https://www.instagram.com/heart_beat_designs/"><img class="insta" src="instagram.png" /></a>
+            <a class="nav-link" href="https://de-de.facebook.com/"><img class="facebook" src="facebook.png" /></a>
+            
+            
             <!-- PayPal Logo -->
             <table id="paypal" border="0" cellpadding="5" cellspacing="5">
                 <tbody>
