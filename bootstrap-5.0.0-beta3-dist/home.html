@@ -12,44 +12,73 @@
         body {
             background-image: url('hintergrund.png');
         }
-        
+
+        /*NavBar CSS startet hier*/
+
         #logo {
+            position: fixed;
+            left: 100px;
+            margin-top: 10px;
             border: 2px solid darksalmon;
             border-radius: 50%;
-            margin-left: 50px;
-            height: 60px;  
+            height: 60px;
+        }
+
+        .navtry {
+            list-style-type: none;
+            margin-left: 200px;
+            margin-right: 100px;
+            border-radius: 20px;
+            padding: 2px;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navtext {
+            float: left;
         }
 
         .nav-link {
-            padding-left: 8%;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            padding-left: 40px;
+            text-decoration: none;
         }
+
+            .nav-link:hover {
+                background-color
+            }
 
         #text {
             color: white;
-            font-size: 25px; 
+            font-size: 25px;
         }
 
         .insta {
             position: fixed;
-            top:20px;
-            right: 370px;
-            height: 50px; 
-            width: 55px;
+            top: 20px;
+            right: 400px;
+            height: 40px;
+            width: 45px;
         }
 
         .facebook {
             position: fixed;
             top: 20px;
-            right: 270px;
+            right: 300px;
             border-radius: 50%;
-            height: 50px;
+            height: 40px;
         }
 
 
         #paypal {
             position: fixed;
-            right: 5%;
+            right: 100px;
         }
+
+        /*NavBar CSS Endet Hier*/
 
         #onlyhaus {
             max-width: 35%;
@@ -58,6 +87,7 @@
             left: 0px;
             bottom: 0px;
         }
+
         .centered {
             font-size: 20px;
             color: white;
@@ -70,11 +100,10 @@
         #sprechblase {
             height: 75%;
             width: 80%;
-            margin-top: 70px;
             margin-left: 200px;
         }
 
-        .container{
+        .container {
             position: fixed;
             text-align: center;
         }
@@ -86,8 +115,7 @@
 
         #footeritem {
             color: white;
-            padding-left: 3%;       
-
+            padding-left: 3%;
         }
 
         #backtothetop {
@@ -103,27 +131,18 @@
             bottom: 0;
             width: 100%;
         }
-
     </style>
 </head>
 <body>
-    <nav id="nav" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#top">
-            <img id="logo" src="logo_haus_only.png" />
-        </a>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <a class="nav-link" id="text" href="#seite_musik">Acts</a>
-            <a class="nav-link" id="text" href="#seite_Tour-Daten">Interviews</a>
-            <a class="nav-link" id="text" href="#seite_Videos">FAQ</a>
-        </div>
-        <div>
-            <a class="nav-link-right" href="https://www.instagram.com/heart_beat_designs/"><img class="insta" src="instagram.png" /></a>
-            <a class="nav-link-right" href="https://de-de.facebook.com/"><img class="facebook" src="facebook.jpg" /></a>
-        </div>
-            
+    <!-- NavBar -->
+    <ul class="navtry">
+        <li class="navtext"><a class="navbar-brand" href="#top"><img id="logo" src="logo_haus_only.png" /></a></li>
+        <li class="navtext"><a class="nav-link" id="text" href="#seite_musik">Acts</a></li>
+        <li class="navtext"><a class="nav-link" id="text" href="#seite_Tour-Daten">Interviews</a></li>
+        <li class="navtext"><a class="nav-link" id="text" href="#seite_Videos">FAQ</a></li>
+        <li class="navtext"><a class="nav-link-right" href="https://www.instagram.com/heart_beat_designs/"><img class="insta" src="instagram.png" /></a></li>
+        <li class="navtext"><a class="nav-link-right" href="https://de-de.facebook.com/"><img class="facebook" src="facebook.jpg" /></a></li>
+        <li>
             <!-- PayPal Logo -->
             <table id="paypal" border="0" cellpadding="5" cellspacing="5">
                 <tbody>
@@ -140,11 +159,12 @@
                 </tbody>
             </table>
             <!-- PayPal Logo -->
-        </div>
-    </nav>
+        </li>
+    </ul>
+    <!-- NavBar -->
 
     <main role="main">
-      
+
         <div calss="container">
             <img id="sprechblase" src="sprechblase.png">
             <div class="centered"> Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text </div>
