@@ -12,41 +12,43 @@
         body {
             background-image: url('hintergrund.png');
         }
-
-        #nav {
-            
-        }
         
         #logo {
             border: 2px solid darksalmon;
             border-radius: 50%;
             margin-left: 50px;
-            height: 60px;
-          
+            height: 60px;  
+        }
+
+        .nav-link {
+            padding-left: 8%;
         }
 
         #text {
             color: white;
-            font-size: 15px; 
+            font-size: 25px; 
         }
 
         .insta {
-            height: 60px; 
-            width: 65px;
+            position: fixed;
+            top:20px;
+            right: 370px;
+            height: 50px; 
+            width: 55px;
         }
 
         .facebook {
+            position: fixed;
+            top: 20px;
+            right: 270px;
             border-radius: 50%;
-            height: 60px;
+            height: 50px;
         }
 
-        .nav-link {
-            padding-left: 9%;
-        }
 
         #paypal {
             position: fixed;
-            right: 3%;
+            right: 5%;
         }
 
         #onlyhaus {
@@ -105,7 +107,7 @@
     </style>
 </head>
 <body>
-    <nav id="nav" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav id="nav" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -116,9 +118,11 @@
             <a class="nav-link" id="text" href="#seite_musik">Acts</a>
             <a class="nav-link" id="text" href="#seite_Tour-Daten">Interviews</a>
             <a class="nav-link" id="text" href="#seite_Videos">FAQ</a>
-            <a class="nav-link" href="https://www.instagram.com/heart_beat_designs/"><img class="insta" src="instagram.png" /></a>
-            <a class="nav-link" href="https://de-de.facebook.com/"><img class="facebook" src="facebook.jpg" /></a>
-            
+        </div>
+        <div>
+            <a class="nav-link-right" href="https://www.instagram.com/heart_beat_designs/"><img class="insta" src="instagram.png" /></a>
+            <a class="nav-link-right" href="https://de-de.facebook.com/"><img class="facebook" src="facebook.jpg" /></a>
+        </div>
             
             <!-- PayPal Logo -->
             <table id="paypal" border="0" cellpadding="5" cellspacing="5">
