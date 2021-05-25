@@ -45,16 +45,13 @@
             padding: 20px;
             padding-left: 40px;
             text-decoration: none;
-        }
-
-            .nav-link:hover {
-                background-color:chocolate;
-            }
-
-        #text {
             color: white;
             font-size: 25px;
         }
+
+            .nav-link:hover {
+                color:chocolate;
+            }
 
         #insta {
             position: fixed;
@@ -80,12 +77,9 @@
 
         /*NavBar CSS Endet Hier*/
 
-        #home_image {
-            height: 100%;
-            width: 100%;
-        }
+        /*FirstScreen CSS Startet Hier*/
 
-        #home_image_zwei {
+        #home_image {
             height: 100%;
             width: 100%;
         }
@@ -96,64 +90,99 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-       
+
+        /*FirstScreen CSS Endet Hier*/
+
+        /*SecondScreen CSS Startet Hier*/
+
+        #zweiterScreen {
+            position: relative;
+            left:0;
+            top:0;
+        }
+
+        #home_image_zwei {
+            position:relative;
+            left:0;
+            height: 100%;
+            width: 100%;
+        }
 
         #onlyhaus {
-            position:relative;
-            max-width: 35%;
-            max-height: 35vh;
-            
+            z-index: 3;
+            position: absolute;
+            left: 1%;
+            top: 60%;
+            width: 20%;
         }
 
         .centered {
+            z-index: 4;
             position: absolute;
-            top: 105%;            
+            left: 30%;
+            top: 15%;
+            width: 45%;
             font-size: 20px;
             color: white;
-            width: 45%;
-            margin-left: 28%;
+            
         }
 
         #sprechblase {
-            position: relative;
+            z-index: 3;
+            position: absolute;
+            left:20%;
+            top: 10%;
             width: 60%;
-            margin-left: 20%;
+            
         }
 
-       
+        /*SecondScreen CSS Endet Hier*/
 
-        #footeritem {
-            color: white;
-            padding-left: 3%;
-        }
 
+        /*Footer CSS Startet Hier*/
+        
         #backtothetop {
             background-color: red;
             position: fixed;
             right: 20px;
-            bottom: 40px;
+            bottom: 70px;
             border-radius: 70px; 
         }
 
         #aufwartspfeil {
             height: 25px;
         }
+        
+        #footeritem {
+            color: white;
+            padding-left: 3%;
+        }
 
-        #footer {
+        #footeritem:hover {
+            color: chocolate;
+        }
+        
+        .footer {
+            z-index: 5;
             position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
+            background-color:black;
+            padding:0.6%;
+            text-align:center;
         }
+
+        /*Footer CSS Endet Hier*/
     </style>
 </head>
 <body>
     <!-- NavBar -->
     <ul class="navtry">
         <li class="navtext"><a class="navbar-brand" href="#top"><img id="logo" src="logo_schwarz_ohne_boden.png" /></a></li>
-        <li class="navtext"><a class="nav-link" id="text" href="#seite_musik">Acts</a></li>
-        <li class="navtext"><a class="nav-link" id="text" href="#seite_Tour-Daten">Interviews</a></li>
-        <li class="navtext"><a class="nav-link" id="text" href="#seite_Videos">FAQ</a></li>
+        <li class="navtext"><a class="nav-link" href="#seite_musik">Acts</a></li>
+        <li class="navtext"><a class="nav-link" href="#seite_Tour-Daten">Interviews</a></li>
+        <li class="navtext"><a class="nav-link" href="#seite_Videos">FAQ</a></li>
         <li class="navtext"><a class="nav-link-right" href="https://www.instagram.com/heart_beat_designs/"><img id="insta" src="instagram.png" /></a></li>
         <li class="navtext"><a class="nav-link-right" href="https://de-de.facebook.com/"><img id="facebook" src="facebook.jpg" /></a></li>
         <li>
@@ -184,15 +213,11 @@
             <div id="rock_at_home"><h1>ROCK@HOME</h1></div>
         </div>
 
-        <div>
+        <div id="zweiterScreen">
             <img id="home_image_zwei" src="sam-moqadam-0gaYQpOMNpc-unsplash.jpg" />
-           
-                <img id="sprechblase" src="sprechblase.png">
-                <div class="centered"> Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text </div>
-           
-
-           
-                <img id="onlyhaus" src="logo_schwarz_ohne_boden.png" />
+            <img id="sprechblase" src="sprechblase.png">
+            <div class="centered"> Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text </div>
+            <img id="onlyhaus" src="logo_schwarz_ohne_boden.png" />
            
         </div>
 
@@ -201,7 +226,7 @@
 
     <button id="backtothetop" href="#top"><img id="aufwartspfeil" src="aufwartspfeil.png" /></button>
 
-    <footer id="footer" class="navbar-expand-md navbar-dark bg-dark">
+    <footer class="footer">
         <a id="footeritem" href="Datenschutz.html">Datenschutz</a>
         <a id="footeritem" href="Impressum.html">Impressum</a>
     </footer>
