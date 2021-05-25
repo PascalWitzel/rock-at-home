@@ -9,29 +9,32 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
+        
         body {
-            background-image: url('hintergrund.png');
+       
         }
 
         /*NavBar CSS startet hier*/
 
         #logo {
             position: fixed;
-            left: 100px;
-            margin-top: 10px;
+            left: 4.5%;
+            top: 1.5%;
             border: 2px solid darksalmon;
             border-radius: 50%;
-            height: 60px;
+            height: 100px;
         }
 
         .navtry {
+            position: fixed;
+            width: 83%;
             list-style-type: none;
             margin-left: 200px;
-            margin-right: 100px;
+            margin-top: 20px;
             border-radius: 20px;
             padding: 2px;
             overflow: hidden;
-            background-color: #333;
+            background-color: #000;
         }
 
         .navtext {
@@ -40,7 +43,6 @@
 
         .nav-link {
             display: block;
-            color: white;
             text-align: center;
             padding: 20px;
             padding-left: 40px;
@@ -48,7 +50,7 @@
         }
 
             .nav-link:hover {
-                background-color
+                background-color:chocolate;
             }
 
         #text {
@@ -56,17 +58,17 @@
             font-size: 25px;
         }
 
-        .insta {
+        #insta {
             position: fixed;
-            top: 20px;
+            top: 40px;
             right: 400px;
             height: 40px;
             width: 45px;
         }
 
-        .facebook {
+        #facebook {
             position: fixed;
-            top: 20px;
+            top: 40px;
             right: 300px;
             border-radius: 50%;
             height: 40px;
@@ -80,32 +82,45 @@
 
         /*NavBar CSS Endet Hier*/
 
-        #onlyhaus {
-            max-width: 35%;
-            max-height: 35vh;
-            position: fixed;
-            left: 0px;
-            bottom: 0px;
+        #home_image {
+            height: 100%;
+            width: 100%;
         }
 
-        .centered {
-            font-size: 20px;
-            color: white;
+        #home_image_zwei {
+            position:relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        #rock_at_home {
             position: absolute;
-            top: 40%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+       
 
-        #sprechblase {
-            height: 75%;
-            width: 80%;
-            margin-left: 200px;
+        #onlyhaus {
+            position:relative;
+            max-width: 35%;
+            max-height: 35vh;
+            
         }
 
-        .container {
-            position: fixed;
-            text-align: center;
+        .centered {
+            position: absolute;
+            top: 105%;            
+            font-size: 20px;
+            color: white;
+            width: 45%;
+            margin-left: 28%;
+        }
+
+        #sprechblase {
+            position: relative;
+            width: 60%;
+            margin-left: 20%;
         }
 
         .imgbox {
@@ -119,10 +134,15 @@
         }
 
         #backtothetop {
-            color: white;
+            background-color: red;
             position: fixed;
-            right: 2%;
-            font-size: 15px;
+            right: 20px;
+            bottom: 40px;
+            border-radius: 70px; 
+        }
+
+        #aufwartspfeil {
+            height: 25px;
         }
 
         #footer {
@@ -136,12 +156,12 @@
 <body>
     <!-- NavBar -->
     <ul class="navtry">
-        <li class="navtext"><a class="navbar-brand" href="#top"><img id="logo" src="logo_haus_only.png" /></a></li>
+        <li class="navtext"><a class="navbar-brand" href="#top"><img id="logo" src="logo_schwarz_ohne_boden.png" /></a></li>
         <li class="navtext"><a class="nav-link" id="text" href="#seite_musik">Acts</a></li>
         <li class="navtext"><a class="nav-link" id="text" href="#seite_Tour-Daten">Interviews</a></li>
         <li class="navtext"><a class="nav-link" id="text" href="#seite_Videos">FAQ</a></li>
-        <li class="navtext"><a class="nav-link-right" href="https://www.instagram.com/heart_beat_designs/"><img class="insta" src="instagram.png" /></a></li>
-        <li class="navtext"><a class="nav-link-right" href="https://de-de.facebook.com/"><img class="facebook" src="facebook.jpg" /></a></li>
+        <li class="navtext"><a class="nav-link-right" href="https://www.instagram.com/heart_beat_designs/"><img id="insta" src="instagram.png" /></a></li>
+        <li class="navtext"><a class="nav-link-right" href="https://de-de.facebook.com/"><img id="facebook" src="facebook.jpg" /></a></li>
         <li>
             <!-- PayPal Logo -->
             <table id="paypal" border="0" cellpadding="5" cellspacing="5">
@@ -165,22 +185,31 @@
 
     <main role="main">
 
-        <div calss="container">
-            <img id="sprechblase" src="sprechblase.png">
-            <div class="centered"> Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text </div>
+        <div>
+            <img id="home_image" src="james-barbosa-qOWjDs-77cM-unsplash.jpg" />
+            <div id="rock_at_home"><h1>ROCK@HOME</h1></div>
         </div>
 
-        <div calss="imgbox">
-            <img id="onlyhaus" src="logo_haus_only.png" />
+        <div>
+            <img id="home_image_zwei" src="sam-moqadam-0gaYQpOMNpc-unsplash.jpg" />
+            <div calss="container">
+                <img id="sprechblase" src="sprechblase.png">
+                <div class="centered"> Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text </div>
+            </div>
+
+            <div calss="imgbox">
+                <img id="onlyhaus" src="logo_schwarz_ohne_boden.png" />
+            </div>
         </div>
 
         <p>&nbsp;</p>
     </main>
 
+    <button id="backtothetop" href="#top"><img id="aufwartspfeil" src="aufwartspfeil.png" /></button>
+
     <footer id="footer" class="navbar-expand-md navbar-dark bg-dark">
         <a id="footeritem" href="Datenschutz.html">Datenschutz</a>
         <a id="footeritem" href="Impressum.html">Impressum</a>
-        <a id="backtothetop" href="#top">Back to top</a>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
