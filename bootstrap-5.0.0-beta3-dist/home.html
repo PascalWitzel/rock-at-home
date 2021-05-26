@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         
+        body {
+            background-color:white;
+        }
+        
+        a {
+            font-family:'Myriad Pro';
+            font-weight:bold;
+        }
 
         /*NavBar CSS startet hier*/
 
@@ -17,20 +25,17 @@
             position: fixed;
             left: 4.5%;
             top: 1.5%;
-            border: 2px solid darksalmon;
-            border-radius: 50%;
             height: 100px;
         }
 
         .navtry {
             z-index:5;
             position: fixed;
-            width: 83%;
+            width: 75%;
             list-style-type: none;
             margin-left: 200px;
-            margin-top: 20px;
+            margin-top: 30px;
             border-radius: 20px;
-            padding: 2px;
             overflow: hidden;
             background-color: #000;
         }
@@ -42,7 +47,7 @@
         .nav-link {
             display: block;
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             padding-left: 40px;
             text-decoration: none;
             color: white;
@@ -55,24 +60,25 @@
 
         #insta {
             position: fixed;
-            top: 40px;
-            right: 400px;
+            top: 45px;
+            right: 500px;
             height: 40px;
             width: 45px;
+            border-radius: 80%;
         }
 
         #facebook {
             position: fixed;
-            top: 40px;
-            right: 300px;
-            border-radius: 50%;
+            top: 45px;
+            right: 400px;
+            border-radius: 60%;
             height: 40px;
         }
 
 
         #paypal {
             position: fixed;
-            right: 100px;
+            right: 200px;
         }
 
         /*NavBar CSS Endet Hier*/
@@ -99,13 +105,16 @@
             position: relative;
             left:0;
             top:0;
+         
         }
 
         #home_image_zwei {
-            position:relative;
-            left:0;
+            position: relative;
+            left: 0;
             height: 100%;
             width: 100%;
+            filter:opacity(85%);
+            
         }
 
         #onlyhaus {
@@ -143,9 +152,9 @@
         
         #backtothetop {
             background-color: red;
-            position: fixed;
-            right: 20px;
-            bottom: 70px;
+            position: absolute;
+            right: 140px;
+            bottom: -700px;
             border-radius: 70px; 
         }
 
@@ -155,7 +164,7 @@
         
         #footeritem {
             color: white;
-            padding-left: 3%;
+            padding-left: 3.5%;
         }
 
         #footeritem:hover {
@@ -164,13 +173,10 @@
         
         .footer {
             z-index: 5;
-            position: fixed;
-            left: 0;
-            bottom: 0;
             width: 100%;
             background-color:black;
-            padding:0.6%;
-            text-align:center;
+            padding:0.8%;
+            text-align:left;
         }
 
         /*Footer CSS Endet Hier*/
@@ -209,22 +215,19 @@
     <main role="main">
 
         <div>
-            <img id="home_image" src="james-barbosa-qOWjDs-77cM-unsplash.jpg" />
-            <div id="rock_at_home"><h1>ROCK@HOME</h1></div>
+            <img id="home_image" src="hintergrund_startseite.jpg" />  
         </div>
 
         <div id="zweiterScreen">
-            <img id="home_image_zwei" src="sam-moqadam-0gaYQpOMNpc-unsplash.jpg" />
+            <img id="home_image_zwei" src="hintergrund_startseite_zwei.jpg" />
             <img id="sprechblase" src="sprechblase.png">
             <div class="centered"> Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text </div>
             <img id="onlyhaus" src="logo_schwarz_ohne_boden.png" />
            
         </div>
 
-        <p>&nbsp;</p>
+        <button id="backtothetop" href="#top"><img id="aufwartspfeil" src="aufwartspfeil.png" /></button>
     </main>
-
-    <button id="backtothetop" href="#top"><img id="aufwartspfeil" src="aufwartspfeil.png" /></button>
 
     <footer class="footer">
         <a id="footeritem" href="Datenschutz.html">Datenschutz</a>
