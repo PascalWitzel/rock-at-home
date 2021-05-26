@@ -9,73 +9,170 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
+
         body {
-            background-image: url("");
+            background-color: white;
         }
 
-        #nav {
-            margin-top: 3%;
+        a {
+            font-family: 'Myriad Pro';
+            font-weight: bold;
         }
+
+        /*NavBar CSS startet hier*/
+
+        #logo {
+            position: fixed;
+            left: 4.5%;
+            top: 1.5%;
+            height: 15%;
+        }
+
+        .navtry {
+            z-index: 5;
+            position: fixed;
+            width: 75%;
+            list-style-type: none;
+            margin-left: 15%;
+            margin-top: 2%;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .navtext {
+            float: left;
+        }
+
+        .nav-link {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            padding-left: 40px;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+
+            .nav-link:hover {
+                color: chocolate;
+            }
+
+        #insta {
+            position: fixed;
+            top: 45px;
+            right: 500px;
+            height: 40px;
+            width: 45px;
+            border-radius: 80%;
+        }
+
+        #facebook {
+            position: fixed;
+            top: 45px;
+            right: 400px;
+            border-radius: 60%;
+            height: 40px;
+        }
+
 
         #paypal {
             position: fixed;
-            right: 3%;
+            right: 200px;
         }
 
-        .center-fit {
-            max-width: 100%;
-            max-height: 100vh;
-            margin:auto;
+        /*NavBar CSS Endet Hier*/
+
+
+        /*SecondScreen CSS Startet Hier*/
+
+        #zweiterScreen {
+            position: relative;
+            left: 0;
+            top: 0;
         }
 
-        .imgbox {
-            display: grid;
-            height: 100%; 
+        #home_image_zwei {
+            position: relative;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            filter: opacity(85%);
+        }
+
+        #onlyhaus {
+            z-index: 3;
+            position: absolute;
+            left: 1.5%;
+            top: 65%;
+            width: 18%;
+        }
+
+        .centered {
+            z-index: 4;
+            position: absolute;
+            left: 60%;
+            bottom: 52%;
+            transform: translate(-50%, -50%);
+            width: 45%;
+            font-size: 20px;
+            color: white;
+        }
+
+        #sprechblase {
+            z-index: 3;
+            position: absolute;
+            left: 20%;
+            top: 10%;
+            width: 60%;
+        }
+
+        /*SecondScreen CSS Endet Hier*/
+
+
+        /*Footer CSS Startet Hier*/
+
+        #backtothetop {
+            position: absolute;
+            right: 8%;
+            bottom: -95%;
+        }
+
+        #aufwaertspfeil {
+            width: 60%;
         }
 
         #footeritem {
-            color: black;
-            padding-left: 3%;       
-
+            color: white;
+            padding-left: 3.5%;
+            text-decoration-line: none;
         }
 
-        #backtothetop {
-            color: black;
-            position: fixed;
-            right: 3%;
-        }
+            #footeritem:hover {
+                color: chocolate;
+            }
 
-        #footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
+        .footer {
+            z-index: 5;
             width: 100%;
+            background-color: black;
+            padding: 0.8%;
+            text-align: left;
         }
 
-        
+        /*Footer CSS Endet Hier*/
     </style>
 </head>
 <body>
-    <nav id="nav" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="home.html">Rock@Home</a>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#seite_musik">Acts</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#seite_Tour-Daten">Interviews</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link " href="#seite_Videos">FAQ</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link " href="#seite_Merch">Support</a>
-                </li>
-            </ul>
+    <!-- NavBar -->
+    <ul class="navtry">
+        <li class="navtext"><a class="navbar-brand" href="home.html"><img id="logo" src="logo_schwarz_ohne_boden.png" /></a></li>
+        <li class="navtext"><a class="nav-link" href="Acts.html">Acts</a></li>
+        <li class="navtext"><a class="nav-link" href="#seite_Tour-Daten">Interviews</a></li>
+        <li class="navtext"><a class="nav-link" href="#seite_Videos">FAQ</a></li>
+        <li class="navtext"><a class="nav-link-right" href="https://www.instagram.com/heart_beat_designs/"><img id="insta" src="instagram.png" /></a></li>
+        <li class="navtext"><a class="nav-link-right" href="https://de-de.facebook.com/"><img id="facebook" src="facebook.png" /></a></li>
+        <li>
             <!-- PayPal Logo -->
             <table id="paypal" border="0" cellpadding="5" cellspacing="5">
                 <tbody>
@@ -92,23 +189,26 @@
                 </tbody>
             </table>
             <!-- PayPal Logo -->
-        </div>
-    </nav>
+        </li>
+    </ul>
+    <!-- NavBar -->
 
     <main role="main">
-      
-        <div class="imgbox">
-            <img class="center-fit" src="logo_note.png">
-            <a>"Datenschutz"</a>
+
+        <div id="zweiterScreen">
+            <img id="home_image_zwei" src="hintergrund_startseite_zwei.jpg" />
+            <img id="sprechblase" src="sprechblase.png">
+            <div class="centered"> DATENSCHUTZ IST UNS SEHR WICHTIG </div>
+            <img id="onlyhaus" src="logo_schwarz_ohne_boden.png" />
+
         </div>
 
-        <p>&nbsp;</p>
+        
     </main>
 
-    <footer id="footer" class="navbar-expand-md navbar-dark bg-dark">
+    <footer class="footer">
         <a id="footeritem" href="Datenschutz.html">Datenschutz</a>
         <a id="footeritem" href="Impressum.html">Impressum</a>
-        <a id="backtothetop" href="#top">Back to top</a>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
