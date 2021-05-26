@@ -11,7 +11,7 @@
     <style>
         
         body {
-            background-color:white;
+            background-color:white; 
         }
         
         a {
@@ -25,7 +25,7 @@
             position: fixed;
             left: 4.5%;
             top: 1.5%;
-            height: 100px;
+            height: 15%;
         }
 
         .navtry {
@@ -33,8 +33,8 @@
             position: fixed;
             width: 75%;
             list-style-type: none;
-            margin-left: 200px;
-            margin-top: 30px;
+            margin-left: 15%;
+            margin-top: 2%;
             border-radius: 20px;
             overflow: hidden;
             background-color: #000;
@@ -90,11 +90,25 @@
             width: 100%;
         }
 
-        #rock_at_home {
+        #startseiten_logo {
+            z-index: 2;
+            width: 20%;
             position: absolute;
-            top: 50%;
             left: 50%;
+            bottom: 28%;
             transform: translate(-50%, -50%);
+        }
+
+        #backtothebottom {
+            position: absolute;
+            left: 50%;
+            bottom: 5%;
+            transform: translate(-50%, -50%);
+        }
+
+        #abwaertspfeil {
+            transform: rotate(180deg);
+            width: 60%;
         }
 
         /*FirstScreen CSS Endet Hier*/
@@ -120,9 +134,9 @@
         #onlyhaus {
             z-index: 3;
             position: absolute;
-            left: 1%;
-            top: 60%;
-            width: 20%;
+            left: 1.5%;
+            top: 65%;
+            width: 18%;
         }
 
         .centered {
@@ -149,22 +163,22 @@
 
 
         /*Footer CSS Startet Hier*/
-        
+
         #backtothetop {
-            background-color: red;
             position: absolute;
-            right: 140px;
-            bottom: -700px;
-            border-radius: 70px; 
+            right: 8%;
+            bottom: -95%;
+            
         }
 
-        #aufwartspfeil {
-            height: 25px;
+        #aufwaertspfeil {
+            width: 60%;
         }
         
         #footeritem {
             color: white;
             padding-left: 3.5%;
+            text-decoration-line:none;
         }
 
         #footeritem:hover {
@@ -185,12 +199,12 @@
 <body>
     <!-- NavBar -->
     <ul class="navtry">
-        <li class="navtext"><a class="navbar-brand" href="#top"><img id="logo" src="logo_schwarz_ohne_boden.png" /></a></li>
+        <li class="navtext"><a class="navbar-brand" href="#home_image"><img id="logo" src="logo_schwarz_ohne_boden.png" /></a></li>
         <li class="navtext"><a class="nav-link" href="#seite_musik">Acts</a></li>
         <li class="navtext"><a class="nav-link" href="#seite_Tour-Daten">Interviews</a></li>
         <li class="navtext"><a class="nav-link" href="#seite_Videos">FAQ</a></li>
         <li class="navtext"><a class="nav-link-right" href="https://www.instagram.com/heart_beat_designs/"><img id="insta" src="instagram.png" /></a></li>
-        <li class="navtext"><a class="nav-link-right" href="https://de-de.facebook.com/"><img id="facebook" src="facebook.jpg" /></a></li>
+        <li class="navtext"><a class="nav-link-right" href="https://de-de.facebook.com/"><img id="facebook" src="facebook.png" /></a></li>
         <li>
             <!-- PayPal Logo -->
             <table id="paypal" border="0" cellpadding="5" cellspacing="5">
@@ -215,18 +229,20 @@
     <main role="main">
 
         <div>
-            <img id="home_image" src="hintergrund_startseite.jpg" />  
+            <img id="home_image" src="hintergrund_startseite.jpg" />
+            <img id="startseiten_logo" src="logo_schwarz_ohne_boden.png"/>
         </div>
+        <a id="backtothebottom" href="#zweiterScreen"><img id="abwaertspfeil" src="botton.png" /></a>
 
         <div id="zweiterScreen">
             <img id="home_image_zwei" src="hintergrund_startseite_zwei.jpg" />
             <img id="sprechblase" src="sprechblase.png">
             <div class="centered"> Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text Ganz viel Text </div>
             <img id="onlyhaus" src="logo_schwarz_ohne_boden.png" />
-           
+
         </div>
 
-        <button id="backtothetop" href="#top"><img id="aufwartspfeil" src="aufwartspfeil.png" /></button>
+        <a id="backtothetop" href="#home_image"><img id="aufwaertspfeil" src="botton.png" /></a>
     </main>
 
     <footer class="footer">
