@@ -2,9 +2,10 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="generator" content="Jekyll v3.8.5">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Rock@Home</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -56,6 +57,7 @@
 
             .nav-link:hover {
                 color: chocolate;
+                text-decoration-line:none;
             }
 
         #insta {
@@ -77,18 +79,12 @@
         #paypal {
             position: fixed;
             right: 200px;
+            top: 6%;
         }
 
         /*NavBar CSS Endet Hier*/
 
-        /*SecondScreen CSS Startet Hier*/
-
-        #zweiterScreen {
-            position: relative;
-            left: 0;
-            top: 0;
-        }
-
+        /*FirstScreen CSS Startet Hier*/
         #home_image_zwei {
             position: relative;
             left: 0;
@@ -97,42 +93,75 @@
             filter: opacity(85%);
         }
 
-        #onlyhaus {
-            z-index: 3;
+        #carouselExampleIndicators {
+            z-index: 2;
             position: absolute;
-            left: 1.5%;
-            top: 65%;
-            width: 18%;
-        }
-
-        .centered {
-            z-index: 4;
-            position: absolute;
-            left: 60%;
-            bottom: 52%;
+            left: 50%;
+            bottom: -10.5%;
             transform: translate(-50%, -50%);
-            width: 45%;
+        }
+
+        #beschriftung {
             font-size: 20px;
-            color: white;
-        }
-
-        #sprechblase {
-            z-index: 3;
+            color: chocolate;
             position: absolute;
-            left: 20%;
-            top: 10%;
-            width: 60%;
+            top:10%;
+            left: 10%;
+            text-align:left;
+            padding: 7px;
+            
         }
 
-        /*SecondScreen CSS Endet Hier*/
+        .carousel-indicators {
+            position: absolute;
+            left: 30%;
+            bottom: -25%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .carousel-indicators #carousel_b.active {
+            background: #fff;
+        }
+        #carousel_b {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-left: 55px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            
+        }
 
+        .carousel-control-prev-icon {
+            position: absolute;
+            bottom: -25%;
+            left: 100px;
+            background-image: url(botton_zwei.png);
+            transform: rotate(270deg);
+            width: 70%;
+            height: 20%;
+        }
 
+        .carousel-control-next-icon {
+            position: absolute;
+            bottom: -25%;
+            right: 100px;
+            background-image: url(botton_zwei.png);
+            transform: rotate(90deg);
+            width: 70%;
+            height: 20%;
+        }
+
+       
+        
+        /*FirstScreen CSS Endet Hier*/
         /*Footer CSS Startet Hier*/
-
         #footeritem {
             color: white;
             padding-left: 3.5%;
             text-decoration-line: none;
+            font-size: 150%;
         }
 
             #footeritem:hover {
@@ -181,14 +210,44 @@
     <!-- NavBar -->
 
     <main role="main">
-
         <div id="zweiterScreen">
-            <img id="home_image_zwei" src="hintergrund_startseite_zwei.jpg" />
-            <img id="sprechblase" src="sprechblase.png">
-            <div class="centered"> HIER KÖNNTE IHR IMPRESSUM STEHEN </div>
-            <img id="onlyhaus" src="logo_schwarz_ohne_boden.png" />
-
+            <img id="home_image_zwei" src="hintergrund_faq.jpg" />
         </div>
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img width="600" height="350" src="sprechblase.png" />
+                    <a id="beschriftung"><font color="#fff">F:</font> Hier steht eine Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
+                </div>
+                <div class="carousel-item">
+                    <img width="600" height="350" src="sprechblase.png" />
+                    <a id="beschriftung"><font color="#fff">F:</font> Hier steht die zweite Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
+                </div>
+                <div class="carousel-item">
+                    <img width="600" height="350" src="sprechblase.png" />
+                    <a id="beschriftung"><font color="#fff">F:</font> Hier steht die dritte Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
 
 
     </main>
