@@ -9,20 +9,19 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-
+        
         body {
-            background-color: white;
+            background-color:white; 
         }
-
+        
+        a {
+            font-family:'Myriad Pro';
+            font-weight:bold;
+        }
         h2 {
             font-family: 'Myriad Pro';
             font-weight: bold;
         }
-        a {
-            font-family: 'Myriad Pro';
-            font-weight: bold;
-        }
-
         /*NavBar CSS startet hier*/
 
         #logo {
@@ -33,7 +32,7 @@
         }
 
         .navtry {
-            z-index: 5;
+            z-index:5;
             position: fixed;
             width: 75%;
             list-style-type: none;
@@ -59,7 +58,7 @@
         }
 
             .nav-link:hover {
-                color: chocolate;
+                color:chocolate;
             }
 
         #insta {
@@ -85,13 +84,14 @@
 
         /*NavBar CSS Endet Hier*/
 
-
+       
         /*SecondScreen CSS Startet Hier*/
 
         #zweiterScreen {
             position: relative;
-            left: 0;
-            top: 0;
+            left:0;
+            top:0;
+         
         }
 
         #home_image_zwei {
@@ -99,60 +99,105 @@
             left: 0;
             height: 100%;
             width: 100%;
-            filter: opacity(85%);
-        }
-
-        #onlyhaus {
-            z-index: 3;
-            position: absolute;
-            left: 1.5%;
-            top: 70%;
-            width: 18%;
-        }
-
-        .centered {
-            z-index: 4;
-            position: absolute;
-            left: 55%;
-            bottom: 45%;
-            transform: translate(-50%, -50%);
-            width: 45%;
-            font-size: 30px;
-            color: white;
+            filter:opacity(85%);
+            
         }
 
         #sprechblase {
             z-index: 3;
             position: absolute;
-            left: 20%;
+            left: 22%;
             top: 20%;
-            width: 60%;
-            height: 70%;
+            width: 68%;
+            height: 78%;
+        }
+        #sprechblase_timeline {
+            z-index: 3;
+            position: absolute;
+            left: 5%;
+            top: 20%;
+            width: 10%;
+            height: 78%;
+        }
+        #centeredMorning {
+            visibility:visible;
+            z-index: 4;
+            position: absolute;
+            left: -12.5%;
+            top: 22%;
+            width: 45%;
+            font-size: 18px;
+            color: chocolate;
+            text-align:center;
+        }
+        #centeredNight {
+            visibility:hidden;
+            z-index: 4;
+            position: absolute;
+            left: -12.5%;
+            top: 22%;
+            width: 45%;
+            font-size: 18px;
+            color: chocolate;
+            text-align: center;
+        }
+        #bottonInterviewDown {
+            visibility: visible;
+            z-index: 5;            
+            background-image:url(botton.png);            
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-color:transparent;           
+            border:none;
+            position: absolute;
+            left: 7.5%;
+            bottom: 18%;
+            transform: rotate(180deg);
+            width: 5%;
+            height: 10%;
+        }
+        #bottonInterviewUp {
+            visibility: hidden;
+            z-index: 5;
+            background-image: url(botton.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            left: 7.5%;
+            top: 22%;
+            width: 5%;
+            height: 3%;
+        }
+        /*SecondScreen CSS Endet Hier*/
+        /*Footer CSS Startet Hier*/
+        #backtothetop {
+            position: absolute;
+            right: 8%;
+            bottom: -95%;
         }
 
-        /*SecondScreen CSS Endet Hier*/
-
-
-        /*Footer CSS Startet Hier*/
-
-     
-
+        #aufwaertspfeil {
+            width: 60%;
+        }
+        
         #footeritem {
             color: white;
             padding-left: 3.5%;
-            text-decoration-line: none;
+            text-decoration-line:none;
         }
 
-            #footeritem:hover {
-                color: chocolate;
-            }
-
+        #footeritem:hover {
+            color: chocolate;
+        }
+        
         .footer {
             z-index: 5;
             width: 100%;
-            background-color: black;
-            padding: 0.8%;
-            text-align: left;
+            background-color:black;
+            padding:0.8%;
+            text-align:left;
         }
 
         /*Footer CSS Endet Hier*/
@@ -190,15 +235,25 @@
 
     <main role="main">
 
+
         <div id="zweiterScreen">
-            <img id="home_image_zwei" src="hintergrund_startseite_zwei.jpg" />
+            <img id="home_image_zwei" src="hintergrun_interview_2.jpg" />
             <img id="sprechblase" src="sprechblase.png">
-            <h2 class="centered"> DATENSCHUTZ IST UNS SEHR WICHTIG </h2>
-            <img id="onlyhaus" src="logo_schwarz_ohne_boden.png" />
+            <div>
+                <img id="sprechblase_timeline" src="sprechblase.png">
+
+                <input type="button" id="bottonInterviewDown" />
+                <h2 id="centeredMorning">12:00 <br />Nikolaus <br /><br /> 13:00 <br />Julia Aldo  <br /><br /> 14:00 <br />Osterhase<br /><br /> 15:00 <br />OH FYO!<br /><br /> 16:00 <br />Caliban<br /><br /> 17:00 <br /> Gleemer </h2>
+
+
+                <input type="button" id="bottonInterviewUp" />
+                <h2 id="centeredNight">18:00 <br />Nikolaus <br /><br /> 19:00 <br />Julia Aldo  <br /><br /> 20:00 <br />Osterhase<br /><br /> 21:00 <br />OH FYO!<br /><br /> 22:00 <br />Caliban<br /><br /> 23:00 <br /> Gleemer </h2>
+
+            </div>
 
         </div>
 
-        
+      
     </main>
 
     <footer class="footer">
