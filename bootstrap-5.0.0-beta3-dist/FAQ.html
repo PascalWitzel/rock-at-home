@@ -93,13 +93,79 @@
             filter: opacity(85%);
         }
 
-        #carouselExampleIndicators {
+        #bottonAct1 {
+            position: absolute;
+            left: 25%;
+            top: 25%;
+            background-color: black;
+            color: white;
+            border: 2px solid #000;
+            border-radius: 60%;
+            font-size: 25px;
+            font-family: 'Myriad Pro';
+            font-weight: bold;
+            padding: 1%;
+            text-align: center;
+        }
+
+        #bottonAct2 {
+            position: absolute;
+            left: 45%;
+            top: 25%;
+            background-color: black;
+            color: white;
+            border: 2px solid #000;
+            border-radius: 60%;
+            font-size: 25px;
+            font-family: 'Myriad Pro';
+            font-weight: bold;
+            padding: 1%;
+            text-align: center;
+        }
+
+        #bottonAct3 {
+            position: absolute;
+            left: 65%;
+            top: 25%;
+            background-color: black;
+            color: white;
+            border: 2px solid #000;
+            border-radius: 60%;
+            font-size: 25px;
+            font-family: 'Myriad Pro';
+            font-weight: bold;
+            padding: 1%;
+            text-align: center;
+        }
+        
+        #carouselExampleIndicators1 {
+            visibility:visible;
+            z-index: 2;
+            position: absolute;
+            left: 50%;
+            bottom: -10.5%;
+            transform: translate(-50%, -50%);
+            
+        }
+        
+        #carouselExampleIndicators2 {
+            visibility: hidden;
             z-index: 2;
             position: absolute;
             left: 50%;
             bottom: -10.5%;
             transform: translate(-50%, -50%);
         }
+        
+        #carouselExampleIndicators3 {
+            visibility: hidden;
+            z-index: 2;
+            position: absolute;
+            left: 50%;
+            bottom: -10.5%;
+            transform: translate(-50%, -50%);
+        }
+      
 
         #beschriftung {
             font-size: 20px;
@@ -175,6 +241,9 @@
             padding: 0.8%;
             text-align: left;
         }
+        #test {
+            visibility:hidden;
+        }
 
         /*Footer CSS Endet Hier*/
     </style>
@@ -215,12 +284,16 @@
         </div>
 
 
+        <input type="button" id="bottonAct1" value="Act 1" />
+        <input type="button" id="bottonAct2" value="Act 2" />
+        <input type="button" id="bottonAct3" value="Act 3" />
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button id="carousel_b" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button id="carousel_b" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button id="carousel_b" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -236,16 +309,75 @@
                     <a id="beschriftung"><font color="#fff">F:</font> Hier steht die dritte Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="false"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="false"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
 
+        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img width="600" height="350" src="sprechblase.png" />
+                    <a id="beschriftung"><font color="#fff">F:</font> HIER steht eine Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
+                </div>
+                <div class="carousel-item">
+                    <img width="600" height="350" src="sprechblase.png" />
+                    <a id="beschriftung"><font color="#fff">F:</font> HIER steht die zweite Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
+                </div>
+                <div class="carousel-item">
+                    <img width="600" height="350" src="sprechblase.png" />
+                    <a id="beschriftung"><font color="#fff">F:</font> HIER steht die dritte Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button id="carousel_b" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img width="600" height="350" src="sprechblase.png" />
+                    <a id="beschriftung"><font color="#fff">F:</font> Hier STEHT eine Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
+                </div>
+                <div class="carousel-item">
+                    <img width="600" height="350" src="sprechblase.png" />
+                    <a id="beschriftung"><font color="#fff">F:</font> Hier STEHT die zweite Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
+                </div>
+                <div class="carousel-item">
+                    <img width="600" height="350" src="sprechblase.png" />
+                    <a id="beschriftung"><font color="#fff">F:</font> Hier STEHT die dritte Frage über den ersten Act, die jeden Interessiert <br /> <font color="#fff">A:</font> Und hier steht die Antwort auf diese Frage, die jeden Interessiert</a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
 
 
