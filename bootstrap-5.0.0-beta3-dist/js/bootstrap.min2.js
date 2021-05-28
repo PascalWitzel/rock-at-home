@@ -8,6 +8,7 @@
 
 
 window.onload = function () {
+    $('.carousel').carousel('pause');
     document.getElementById('bottonInterviewDown').addEventListener("click", down)
     document.getElementById('bottonInterviewUp').addEventListener("click", up)
 }
